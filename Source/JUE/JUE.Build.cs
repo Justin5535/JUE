@@ -37,7 +37,9 @@ public class JUE : ModuleRules
 				"CoreUObject",
 				"Engine",
 				"Slate",
-				"SlateCore",
+				"SlateCore", 
+				"CommonUI",
+				"UMG"
 				// ... add private dependencies that you statically link with here ...	
 			}
 			);
