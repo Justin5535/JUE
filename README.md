@@ -1,9 +1,17 @@
 ## Justin's Unreal Essentials
-JUE is a compilation of reusable content that were developed from different Unreal Engine projects.
+JUE is a compilation of reusable content developed from different Unreal Engine projects.
 
-This includes things like:
+It includes content like:
 - Common Game Settings, Ready for implementation
-- Standard UI Widgets (Simple button, Tab Selector, Input Action Icon widgets)
+- Standard UI Interactable Widgets (Simple button, Tab Selector, Input Action Icon widgets)
 - Standard UI setup for Controllers
-- Input interface Icons (Keyboard & Mouse and XBOX)
-- Utility librairies
+- Input interface Icons (Keyboard & Mouse and XBOX Gamepad)
+- Utility librairies for development in Editor
+- Epic Games's Level Prototyping content for Level blocking
+
+### Update frequency
+Content will be gradually added and/or updated as I find more useful, interesting and reusable things over time.
+
+**Notice**
+This plugin and its content is the property of Justin Renaud-Gélinas.
+Please contact me if you have any questions about this content.
