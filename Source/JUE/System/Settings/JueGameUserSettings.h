@@ -37,6 +37,16 @@ public:
 	FOnAudioSignature OnAudioSettingsUpdate;
 	
 
+	/** Settings */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "GameplaySettings", Config)
+	FJueGameSettings GameSettings;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "GameplaySettings", Config)
+	FJueControlSettings ControlSettings;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "AudioSettings", Config)
+	FJueAudioSettings AudioSettings;
+
 	/** Setters */
 	UFUNCTION(BlueprintCallable, Category = "GameplaySettings")
 	void SetGameSpeed(float GameSpeed);
@@ -87,16 +97,4 @@ public:
 
 	UFUNCTION(BlueprintPure, Category = "AudioSettings")
 	float GetAmbianceAudioVolume() const;
-
-protected:
-	
-	/** Settings */
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "GameplaySettings", Config)
-	FJueGameSettings GameSettings;
-	
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "GameplaySettings", Config)
-	FJueControlSettings ControlSettings;
-	
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "AudioSettings", Config)
-	FJueAudioSettings AudioSettings;
 };

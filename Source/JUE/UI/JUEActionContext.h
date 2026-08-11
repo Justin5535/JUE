@@ -15,6 +15,10 @@ class JUE_API UJUEActionContext : public UCommonUserWidget
 {
 	GENERATED_BODY()
 
+public:
+	UFUNCTION(BlueprintCallable)
+	void SetInputActions(const TArray<FDataTableRowHandle>& NewInputActions);
+
 protected:
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, meta=(BindWidget))
@@ -30,6 +34,6 @@ protected:
 	TArray<FDataTableRowHandle> InputActions;
 
 public:
-	virtual void NativePreConstruct() override;
+	virtual void NativeConstruct() override;
 	
 };

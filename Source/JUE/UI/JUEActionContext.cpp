@@ -6,7 +6,13 @@
 #include "CommonActionWidget.h"
 #include "CommonTextBlock.h"
 
-void UJUEActionContext::NativePreConstruct()
+void UJUEActionContext::SetInputActions(const TArray<FDataTableRowHandle>& NewInputActions)
+{
+	InputActions = NewInputActions;
+	ActionWidget->SetInputActions(InputActions);
+}
+
+void UJUEActionContext::NativeConstruct()
 {
 
 	ActionWidget->SetInputActions(InputActions);
@@ -16,5 +22,5 @@ void UJUEActionContext::NativePreConstruct()
 		ActionTextWidget->SetText(ActionName);
 	}
 	
-	Super::NativePreConstruct();
+	Super::NativeConstruct();
 }
