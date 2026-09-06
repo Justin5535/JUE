@@ -1,5 +1,6 @@
 ## Justin's Unreal Essentials
 JUE is a compilation of reusable content developed from different Unreal Engine projects.
+The plugin was built in **version 5.5** of Unreal Engine.
 
 It includes content like:
 - Common Game Settings, Ready for implementation
@@ -14,4 +15,4 @@ Content will be gradually added and/or updated as I find more useful, interestin
 
 **Notice**
 This plugin and its content is the property of Justin Renaud-Gélinas.
-Please contact me if you have any questions about this content.
+Please contact me if you would like to use it or have any questions about this content.
